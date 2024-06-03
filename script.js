@@ -56,7 +56,7 @@ async function checkweather(city) {
       
       for (let i = 0; i < forecast_img.length; i++) {
          if (forecastdata.list[i].weather[0].main == "Clouds") {
-            forecast_img[i].src = "clear-sky.png"
+            forecast_img[i].src =  'clouds.png'
             forecast_name[i].innerHTML=forecastdata.list[i].weather[0].main;
          }
          else if (forecastdata.list[i].weather[0].main == "Clear") {
