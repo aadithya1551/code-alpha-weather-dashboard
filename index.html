@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Weather Dashboard</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   <div class="card">
+      <div class="search">
+         <input type="text" id="search" placeholder="Enter city name" spellcheck="false">
+         <button id="btn"><img src="search.png" alt="search"></button>
+      </div>
+
+      <div class="error">
+         <p>Invalid City Name</p>
+      </div>
+      <div id="weather">
+         <img src="" class="weather-icon" id="icon" alt="">
+         <h5 id="weather-name"></h5>
+         <h1 class="temp"></h1>
+         <h2 class="city"></h2>
+         <div class="details">
+            <div class="col">
+               <img src="humidity.png" alt="">
+               <div>
+                  <p class="humidity">50%</p>
+                  <p>Humidity</p>
+               </div>
+            </div>
+            <div class="col">
+               <img src="wind.png" alt="">
+               <div>
+                  <p class="wind">15km/h</p>
+                  <p>Wind Speed</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <div id="forecast">
+         <div class="threehourforecast">
+            <h4>After 3 Hours</h4>
+            <img src="" class="forecast-img" alt="">
+            <h5 class="weather-name"></h5>
+         </div>
+
+         <div class="threehourforecast">
+            <h4>After 3 Hours</h4>
+            <img src="" class="forecast-img" alt="">
+            <h5 class="weather-name"></h5>
+         </div>
+
+         <div class="threehourforecast">
+            <h4>After 3 Hours</h4>
+            <img src="" class="forecast-img" alt="">
+            <h5 class="weather-name"></h5>
+         </div>
+
+         <div class="threehourforecast">
+            <h4>After 3 Hours</h4>
+            <img src="" class="forecast-img" alt="">
+            <h5 class="weather-name"></h5>
+         </div>
+      </div>
+   </div>
+
+   <script src="script.js"></script>
+</body>
+
+</html>
